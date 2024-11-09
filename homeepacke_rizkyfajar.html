@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Nusantara - Jelajahi Cita Rasa Indonesia</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('/api/placeholder/1920/1080') center/cover;
+            height: 600px;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-red-600">Kuliner Nusantara</a>
+                <div class="space-x-6">
+                    <a href="index.html" class="text-gray-800 hover:text-red-600">Beranda</a>
+                    <a href="content.html" class="text-gray-800 hover:text-red-600">Eksplorasi</a>
+                    <a href="feedback.html" class="text-gray-800 hover:text-red-600">Feedback</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section flex items-center justify-center">
+            <div class="text-center text-white">
+                <h1 class="text-5xl font-bold mb-4">Jelajahi Cita Rasa Nusantara</h1>
+                <p class="text-xl mb-8">Temukan keberagaman kuliner Indonesia yang menakjubkan</p>
+                <a href="content.html" class="bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 transition">Mulai Eksplorasi</a>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-6 py-16">
+            <h2 class="text-3xl font-bold text-center mb-12">Highlight Kuliner</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="/api/placeholder/400/300" alt="Rendang" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Rendang</h3>
+                        <p class="text-gray-600">Masakan daging dengan bumbu rempah khas Minangkabau</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="/api/placeholder/400/300" alt="Soto" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Soto</h3>
+                        <p class="text-gray-600">Sup tradisional Indonesia dengan berbagai variasi daerah</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="/api/placeholder/400/300" alt="Nasi Goreng" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Nasi Goreng</h3>
+                        <p class="text-gray-600">Hidangan nasi yang digoreng dengan bumbu khas Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>Learning Labs 2024 L0324032 Rizky Fajar Triwibowo</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll animation
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('header').classList.add('shadow-lg');
+            } else {
+                document.querySelector('header').classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>

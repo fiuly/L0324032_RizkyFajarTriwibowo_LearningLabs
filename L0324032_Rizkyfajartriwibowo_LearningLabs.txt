@@ -1,0 +1,90 @@
+Dibuat oleh: Rizky Fajar Triwibowo
+NIM: L0324032
+Kelas: Learning Labs 2024
+# Website Kuliner Nusantara
+
+Website Kuliner Nusantara adalah platform digital yang dirancang untuk memperkenalkan dan mengeksplorasi kekayaan kuliner Indonesia. Website ini menyajikan informasi tentang berbagai makanan tradisional dari berbagai daerah di Indonesia.
+
+## Fitur Utama
+
+### 1. Halaman Utama (index.html)
+- Hero section dengan gambar latar belakang kuliner
+- Highlight kuliner unggulan (Rendang, Soto, Nasi Goreng)
+- Animasi hover pada kartu kuliner
+- Navigasi yang responsif
+- Header dengan efek scroll
+
+### 2. Halaman Eksplorasi (content.html)
+- Katalog makanan tradisional Indonesia
+- Informasi detail tentang setiap makanan
+- Fitur "Load More" untuk memuat konten tambahan
+- Deskripsi lengkap bahan dan variasi makanan
+- Gambar ilustrasi untuk setiap makanan
+
+### 3. Halaman Feedback (feedback.html)
+- Form feedback interaktif
+- Sistem rating bintang
+- Validasi input form
+- Notifikasi sukses setelah submit
+
+## Teknologi yang Digunakan
+
+1. **Framework CSS**
+   - Tailwind CSS untuk styling responsive
+   - Sistem grid modern
+   - Komponen yang dapat digunakan kembali
+
+2. **JavaScript**
+   - Interaksi dinamis pada form
+   - Animasi scroll header
+   - Sistem rating interaktif
+   - Loading konten dinamis
+
+3. **HTML5**
+   - Semantic markup (header, nav, main, footer)
+   - Form validation
+   - Responsive images
+
+## Struktur Folder
+
+```
+kuliner-nusantara/
+│
+├── index.html            # Halaman utama
+├── content.html          # Halaman eksplorasi kuliner
+├── feedback.html         # Halaman form feedback
+│
+├── css/
+│   └── styles.css        # File CSS tambahan
+│
+├── js/
+│   └── script.js         # File JavaScript
+│
+└── images/              # Folder untuk gambar
+```
+
+## Fitur Responsif
+
+Website ini dirancang untuk responsif di berbagai ukuran layar:
+- Desktop (> 1024px)
+- Tablet (768px - 1024px)
+- Mobile (< 768px)
+
+## Pengembangan Ke Depan
+
+Beberapa fitur yang dapat ditambahkan untuk pengembangan:
+1. Sistem pencarian makanan
+2. Fitur filter berdasarkan daerah
+3. Galeri foto interaktif
+4. Peta lokasi kuliner
+5. Sistem review dan rating yang lebih kompleks
+
+## Credit
+
+Dibuat oleh: Rizky Fajar Triwibowo
+NIM: L0324032
+Kelas: Learning Labs 2024
+
+## Lisensi
+
+Website ini dibuat untuk tujuan pembelajaran dan tidak boleh digunakan untuk kepentingan komersial tanpa izin.

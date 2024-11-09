@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksplorasi - Kuliner Nusantara</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-red-600">Kuliner Nusantara</a>
+                <div class="space-x-6">
+                    <a href="index.html" class="text-gray-800 hover:text-red-600">Beranda</a>
+                    <a href="content.html" class="text-gray-800 hover:text-red-600">Eksplorasi</a>
+                    <a href="feedback.html" class="text-gray-800 hover:text-red-600">Feedback</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24 pb-16">
+        <h1 class="text-4xl font-bold text-center mb-12">Eksplorasi Kuliner Nusantara</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/api/placeholder/600/400" alt="Rendang" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-4">Rendang</h2>
+                    <div class="text-gray-600 space-y-4">
+                        <p>Rendang adalah masakan daging dengan bumbu rempah-rempah yang berasal dari Minangkabau. Proses memasak dengan suhu rendah dalam waktu lama menggunakan santan kelapa membuat dagingnya empuk dan bumbu meresap.</p>
+                        <h3 class="font-bold text-xl text-gray-800">Bahan Utama:</h3>
+                        <ul class="list-disc pl-6">
+                            <li>Daging sapi</li>
+                            <li>Santan kelapa</li>
+                            <li>Aneka rempah</li>
+                            <li>Cabai</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/api/placeholder/600/400" alt="Sate" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-4">Sate</h2>
+                    <div class="text-gray-600 space-y-4">
+                        <p>Sate adalah makanan yang terbuat dari potongan daging yang ditusuk dan dibakar, disajikan dengan berbagai macam bumbu. Di Indonesia, sate dapat ditemukan di berbagai daerah dengan variasi yang berbeda-beda.</p>
+                        <h3 class="font-bold text-xl text-gray-800">Variasi Populer:</h3>
+                        <ul class="list-disc pl-6">
+                            <li>Sate Madura</li>
+                            <li>Sate Padang</li>
+                            <li>Sate Lilit</li>
+                            <li>Sate Ayam</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div id="moreContent" class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 hidden">
+            <!-- Additional content will be loaded here -->
+        </div>
+
+        <div class="text-center mt-8">
+            <button id="loadMore" class="bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 transition">
+                Muat Lebih Banyak
+            </button>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>Learning Labs 2024 L0324032 Rizky Fajar Triwibowo</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('loadMore').addEventListener('click', function() {
+            const moreContent = document.getElementById('moreContent');
+            moreContent.classList.remove('hidden');
+            this.style.display = 'none';
+            
+            // Add more content dynamically
+            moreContent.innerHTML = `
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="/api/placeholder/600/400" alt="Nasi Goreng" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-4">Nasi Goreng</h2>
+                        <div class="text-gray-600 space-y-4">
+                            <p>Nasi goreng adalah hidangan nasi yang digoreng dengan bumbu-bumbu khas Indonesia. Variasi nasi goreng dapat ditemukan di seluruh Indonesia dengan cita rasa yang berbeda-beda.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="/api/placeholder/600/400" alt="Soto" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-4">Soto</h2>
+                        <div class="text-gray-600 space-y-4">
+                            <p>Soto adalah sup tradisional Indonesia yang terdiri dari kaldu, daging, dan sayuran. Setiap daerah di Indonesia memiliki variasi soto yang unik.</p>
+                        </div>
+                    </div>
+                </article>
+            `;
+        });
+    </script>
+</body>
+</html>

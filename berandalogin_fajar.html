@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Kuliner Nusantara</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-red-600">Kuliner Nusantara</a>
+                <div class="space-x-6">
+                    <a href="index.html" class="text-gray-800 hover:text-red-600">Beranda</a>
+                    <a href="content.html" class="text-gray-800 hover:text-red-600">Eksplorasi</a>
+                    <a href="feedback.html" class="text-gray-800 hover:text-red-600">Feedback</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24 pb-16">
+        <div class="max-w-2xl mx-auto">
+            <h1 class="text-4xl font-bold text-center mb-12">Berikan Feedback Anda</h1>
+            
+            <form id="feedbackForm" class="bg-white rounded-lg shadow-lg p-8">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nama</label>
+                    <input type="text" id="name" name="name" required
+                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-red-500">
+                </div>
+
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-red-500">
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Rating</label>
+                    <div class="flex space-x-4" id="ratingStars">
+                        <button type="button" class="text-2xl text-gray-400 hover:text-yellow-400">★</button>
+                        <button type="button" class="text-2xl text-gray-400 hover:text-yellow-400">★</button>
+                        <button type="button" class="text-2xl text-gray-400 hover:text-yellow-400">★</button>
+                        <button type="button" class="text-2xl text-gray-400 hover:text-yellow-400">★
